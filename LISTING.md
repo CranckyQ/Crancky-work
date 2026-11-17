@@ -1,0 +1,354 @@
+# Chrome Web Store – listing kit for Crancky Work
+
+Everything you need to fill in the Chrome Web Store Developer Dashboard.
+Upload package: run `npm run zip` → `crancky-work-<version>.zip` (manifest.json at the root).
+
+## Store listing
+
+**Category:** Productivity → Workflow & Planning
+**Language:** English (default), German (add as second language)
+
+### Name
+
+`Crancky Work`
+
+### Summary (max. 132 characters)
+
+- EN: `Collect job listings from StepStone, Indeed, LinkedIn and XING into one Excel table – sorted, filtered, ready to apply.`
+- DE: `Stellenanzeigen von StepStone, Indeed, LinkedIn und XING in eine Excel-Tabelle sammeln – sortiert, gefiltert, bereit zur Bewerbung.`
+
+### Description – English
+
+```
+Crancky Work turns your job search into one clean Excel table – collected automatically, sorted, filtered and ready for your applications.
+
+Searching for a job, an internship or a Praxissemester usually means opening dozens of ads, copying titles, companies and requirements by hand and losing track of what you have already seen – and most of the results don't even fit you. Crancky Work does this work for you: open a search results page on StepStone, Indeed, LinkedIn or XING, click "Start collecting" and keep working while Crancky Work reads the job ads one by one in the background. Upload your CV and Crancky Work tells you which jobs fit you best, rates each one and shows you the keywords of every job.
+
+━━━━━━━━━━━━━━━━━━━━
+HOW IT WORKS
+━━━━━━━━━━━━━━━━━━━━
+1. Open a job search on StepStone, Indeed, LinkedIn or XING.
+2. Click the Crancky Work icon – the side panel opens and analyzes the page right away.
+3. Choose a title filter and a mode, then click "Start collecting".
+4. Crancky Work reads every job ad in its own background window. You can keep browsing and switch tabs – in page-by-page mode you can even close the search page.
+5. Click "Export Excel" – done.
+
+━━━━━━━━━━━━━━━━━━━━
+PAGE ANALYSIS BEFORE YOU START
+━━━━━━━━━━━━━━━━━━━━
+As soon as you open the side panel, Crancky Work shows you:
+• which job board was recognized
+• how many jobs are on the current page
+• about how many jobs the search has in total
+• how many result pages there are
+• how long collecting will take approximately
+• how many jobs your title filter will skip on this page
+
+Move the mouse over the page and Crancky Work highlights the whole job list in green together with its number of jobs – so you can see exactly what will be collected.
+
+━━━━━━━━━━━━━━━━━━━━
+TWO COLLECTION MODES
+━━━━━━━━━━━━━━━━━━━━
+• Page by page: Crancky Work follows the search results across several pages (you choose the maximum number of pages) and reads every job ad.
+• Continuous: for pages that load more jobs while you scroll. Crancky Work reads all jobs that are already on the page and adds every new job that appears while you keep scrolling.
+
+━━━━━━━━━━━━━━━━━━━━
+ONE ROW PER JOB – WITH THE DESCRIPTION SPLIT INTO SECTIONS
+━━━━━━━━━━━━━━━━━━━━
+Every job becomes one row with these columns:
+• Title, Company, Location
+• Date posted (converted to a real date, e.g. "3 days ago" → 2026-10-02)
+• Salary and Contract type (when the ad shows them)
+• Link to the job ad
+• Description
+
+The description is split automatically – without AI, using the headings of the ad – into:
+• Your tasks ("Ihre Aufgaben")
+• Your profile ("Ihr Profil")
+• We offer ("Wir bieten")
+• Other (contact details, application notes)
+
+Each part of the text appears in exactly one column, so you can compare requirements and benefits of many jobs at a glance. If an ad has no recognizable headings, the full text stays in the description column.
+
+━━━━━━━━━━━━━━━━━━━━
+FILTERS THAT FIT YOUR SEARCH
+━━━━━━━━━━━━━━━━━━━━
+• Title filter: skip jobs whose title contains words you don't want.
+• Ready-made filters: "Pupils & holiday jobs" (Schüler, Schul, Ferial) and "Praxissemester" (Dual, Studiengang, Quereinsteiger, Senior, Schüler, Controlling, Ausbildung).
+• Your own words: add any keywords you like.
+• No duplicates: jobs you have already collected are skipped automatically – also across different searches. "Clear history" starts fresh.
+
+━━━━━━━━━━━━━━━━━━━━
+LIVE VIEW AND FULL CONTROL
+━━━━━━━━━━━━━━━━━━━━
+• Live progress in the side panel: current job, number of jobs collected, remaining time.
+• Live view on the results page: every job is marked while Crancky Work works (queued, reading, done, skipped).
+• The toolbar badge shows the progress even when the side panel is closed.
+• A notification tells you when collecting is finished ("Done! 312 jobs collected").
+• Pause, continue or cancel at any time.
+• Resume after a browser restart – nothing is lost, everything is saved in your browser.
+• Choose how the collection window is shown (minimized or as a normal window).
+
+━━━━━━━━━━━━━━━━━━━━
+THE JOB TABLE
+━━━━━━━━━━━━━━━━━━━━
+• Sort by any column (e.g. newest first)
+• Search the table
+• Delete jobs you are not interested in (one or several at once)
+• Expand a row to read the description and its sections
+
+━━━━━━━━━━━━━━━━━━━━
+EXCEL EXPORT
+━━━━━━━━━━━━━━━━━━━━
+• A real Excel table with filter buttons in the header
+• Frozen header row, sensible column widths, wrapped text
+• Clickable links to every job ad
+• Column headers in English or German
+• "Append to previous results": add new jobs to your earlier export instead of starting a new file
+• Very long texts are shortened safely so Excel can always open the file
+
+━━━━━━━━━━━━━━━━━━━━
+WHICH JOBS FIT YOUR CV?
+━━━━━━━━━━━━━━━━━━━━
+Upload your CV once in the settings (PDF, Word or text) – it is read inside your browser.
+• Every job gets a fit score from 0 to 100: very good, good, partial or low fit
+• The table is sorted by fit, and "Best matches for your CV" shows your top 5
+• Open a job to see its keywords, which of them are in your CV and which are missing – perfect for tailoring your application
+• Must-haves count more than nice-to-haves ("wünschenswert", "von Vorteil"), and an English CV also matches German ads
+• Show only jobs from 60 % fit, and keep track of your applications: status (interested, applied, interview, offer, rejected) and notes for every job
+• The Excel export includes status, notes, fit %, keywords, "in my CV" and "missing" columns
+This rating runs locally – your CV never leaves your browser.
+
+Optional AI evaluation: turn it on in the settings and enter your own Anthropic API key to let Claude rate the jobs. Each job gets an AI score, a short verdict, matched and missing skills and its keywords. Only when you click "Rate with AI" are your CV and the chosen job ads sent directly to Anthropic with your key; usage is billed to your Anthropic account.
+
+Prefer to use your own AI chat? "Match with my CV" copies a ready-made prompt with your CV and the selected jobs to the clipboard.
+
+━━━━━━━━━━━━━━━━━━━━
+OTHER JOB SITES
+━━━━━━━━━━━━━━━━━━━━
+Crancky Work also works on many other job boards and company career pages: point at the job list, click it, and Crancky Work learns where the jobs are. Access to such a site is only requested when you choose to use Crancky Work there – for that one site only.
+
+━━━━━━━━━━━━━━━━━━━━
+PRIVATE AND FAIR BY DESIGN
+━━━━━━━━━━━━━━━━━━━━
+• Everything stays in your browser: no account, no servers, no tracking, no analytics.
+• Your collected jobs, settings and CV are stored locally and are never sent to the developer. Only the optional AI evaluation – if you turn it on and use it – sends your CV and the chosen job ads to Anthropic with your own key.
+• Crancky Work never solves CAPTCHAs and never bypasses logins. If a site asks you to confirm that you are human or to sign in, Crancky Work stops, tells you, and waits until you have handled it yourself.
+• Crancky Work reads one job at a time with a random pause of several seconds between pages, like a person would.
+• Interface in English and German.
+
+━━━━━━━━━━━━━━━━━━━━
+GOOD TO KNOW
+━━━━━━━━━━━━━━━━━━━━
+• LinkedIn and XING show most jobs only to logged-in users. Crancky Work uses the session you already have open in your browser – it never asks for or stores your password.
+• Job boards change their pages from time to time. If something is not recognized correctly, please report it so the site support can be updated.
+• Please respect the Terms of Service of the job boards you use. Crancky Work is meant for your own, personal job search at a moderate pace.
+
+Crancky Work is an independent project and is not affiliated with, endorsed by or sponsored by StepStone, Indeed, LinkedIn or XING. All names belong to their respective owners.
+
+Privacy policy: https://github.com/CranckyQ/crancky-work/blob/main/PRIVACY.md
+```
+
+### Description – Deutsch
+
+```
+Crancky Work macht aus deiner Jobsuche eine saubere Excel-Tabelle – automatisch gesammelt, sortiert, gefiltert und bereit für deine Bewerbungen.
+
+Wer einen Job, ein Praktikum oder ein Praxissemester sucht, öffnet meist Dutzende Anzeigen, kopiert Titel, Firmen und Anforderungen von Hand und verliert schnell den Überblick – und die meisten Treffer passen gar nicht. Crancky Work übernimmt das für dich: Öffne eine Ergebnisseite auf StepStone, Indeed, LinkedIn oder XING, klick auf „Sammeln starten“ und arbeite einfach weiter, während Crancky Work die Anzeigen nacheinander im Hintergrund liest. Lade deinen Lebenslauf hoch, und Crancky Work zeigt dir, welche Jobs am besten passen, bewertet jeden einzelnen und nennt dir die Schlüsselwörter jeder Stelle.
+
+━━━━━━━━━━━━━━━━━━━━
+SO FUNKTIONIERT ES
+━━━━━━━━━━━━━━━━━━━━
+1. Öffne eine Jobsuche auf StepStone, Indeed, LinkedIn oder XING.
+2. Klick auf das Crancky Work-Symbol – die Seitenleiste öffnet sich und analysiert die Seite sofort.
+3. Wähle einen Titel-Filter und einen Modus und klick auf „Sammeln starten“.
+4. Crancky Work liest jede Anzeige in einem eigenen Hintergrund-Fenster. Du kannst weitersurfen und den Tab wechseln – im Modus „Seite für Seite“ sogar die Suchseite schließen.
+5. Klick auf „Excel exportieren“ – fertig.
+
+━━━━━━━━━━━━━━━━━━━━
+SEITENANALYSE VOR DEM START
+━━━━━━━━━━━━━━━━━━━━
+Sobald du die Seitenleiste öffnest, zeigt dir Crancky Work:
+• welche Jobbörse erkannt wurde
+• wie viele Jobs auf der aktuellen Seite stehen
+• wie viele Jobs die Suche ungefähr insgesamt hat
+• wie viele Ergebnisseiten es gibt
+• wie lange das Sammeln ungefähr dauert
+• wie viele Jobs dein Titel-Filter auf dieser Seite überspringt
+
+Bewegst du die Maus über die Seite, markiert Crancky Work die ganze Jobliste grün mit der Anzahl der Jobs – so siehst du genau, was gesammelt wird.
+
+━━━━━━━━━━━━━━━━━━━━
+ZWEI SAMMEL-MODI
+━━━━━━━━━━━━━━━━━━━━
+• Seite für Seite: Crancky Work folgt den Suchergebnissen über mehrere Seiten (die Höchstzahl bestimmst du) und liest jede Anzeige.
+• Fortlaufend: für Seiten, die beim Scrollen weitere Jobs nachladen. Crancky Work liest alle Jobs, die schon auf der Seite stehen, und nimmt jeden neuen Job auf, der beim Weiterscrollen erscheint.
+
+━━━━━━━━━━━━━━━━━━━━
+EINE ZEILE PRO JOB – MIT AUFGETEILTER BESCHREIBUNG
+━━━━━━━━━━━━━━━━━━━━
+Jeder Job wird zu einer Zeile mit diesen Spalten:
+• Titel, Unternehmen, Ort
+• Veröffentlicht (als echtes Datum, z. B. „vor 3 Tagen“ → 2026-10-02)
+• Gehalt und Vertragsart (wenn die Anzeige sie nennt)
+• Link zur Anzeige
+• Beschreibung
+
+Die Beschreibung wird automatisch – ohne KI, anhand der Überschriften der Anzeige – aufgeteilt in:
+• Ihre Aufgaben
+• Ihr Profil
+• Wir bieten
+• Sonstiges (Kontakt, Hinweise zur Bewerbung)
+
+Jeder Textteil steht in genau einer Spalte – so vergleichst du Anforderungen und Benefits vieler Jobs auf einen Blick. Hat eine Anzeige keine erkennbaren Überschriften, bleibt der vollständige Text in der Spalte Beschreibung.
+
+━━━━━━━━━━━━━━━━━━━━
+FILTER, DIE ZU DEINER SUCHE PASSEN
+━━━━━━━━━━━━━━━━━━━━
+• Titel-Filter: Jobs überspringen, deren Titel Wörter enthält, die du nicht willst.
+• Fertige Filter: „Schüler & Ferialjobs“ (Schüler, Schul, Ferial) und „Praxissemester“ (Dual, Studiengang, Quereinsteiger, Senior, Schüler, Controlling, Ausbildung).
+• Eigene Wörter: beliebige Stichwörter hinzufügen.
+• Keine Duplikate: Bereits gesammelte Jobs werden automatisch übersprungen – auch über verschiedene Suchen hinweg. „Verlauf löschen“ fängt neu an.
+
+━━━━━━━━━━━━━━━━━━━━
+LIVE-ANSICHT UND VOLLE KONTROLLE
+━━━━━━━━━━━━━━━━━━━━
+• Live-Fortschritt in der Seitenleiste: aktueller Job, Anzahl gesammelter Jobs, verbleibende Zeit.
+• Live-Ansicht auf der Ergebnisseite: Jeder Job wird markiert, während Crancky Work arbeitet (in der Warteschlange, wird gelesen, fertig, übersprungen).
+• Das Symbol in der Symbolleiste zeigt den Fortschritt auch bei geschlossener Seitenleiste.
+• Eine Benachrichtigung meldet, wenn das Sammeln fertig ist („Fertig! 312 Jobs gesammelt“).
+• Jederzeit pausieren, fortsetzen oder abbrechen.
+• Nach einem Browser-Neustart weitermachen – nichts geht verloren, alles wird in deinem Browser gespeichert.
+• Wähle, wie das Sammel-Fenster angezeigt wird (minimiert oder als normales Fenster).
+
+━━━━━━━━━━━━━━━━━━━━
+DIE JOB-TABELLE
+━━━━━━━━━━━━━━━━━━━━
+• Nach jeder Spalte sortieren (z. B. neueste zuerst)
+• Tabelle durchsuchen
+• Uninteressante Jobs löschen (einzeln oder mehrere auf einmal)
+• Zeile aufklappen, um Beschreibung und Abschnitte zu lesen
+
+━━━━━━━━━━━━━━━━━━━━
+EXCEL-EXPORT
+━━━━━━━━━━━━━━━━━━━━
+• Eine echte Excel-Tabelle mit Filter-Schaltflächen in der Kopfzeile
+• Fixierte Kopfzeile, passende Spaltenbreiten, Zeilenumbruch
+• Klickbare Links zu jeder Anzeige
+• Spaltenüberschriften auf Deutsch oder Englisch
+• „An vorherige Ergebnisse anhängen“: neue Jobs zu deinem früheren Export hinzufügen statt eine neue Datei zu beginnen
+• Sehr lange Texte werden sicher gekürzt, damit Excel die Datei immer öffnen kann
+
+━━━━━━━━━━━━━━━━━━━━
+WELCHE JOBS PASSEN ZU DEINEM LEBENSLAUF?
+━━━━━━━━━━━━━━━━━━━━
+Lade deinen Lebenslauf einmal in den Einstellungen hoch (PDF, Word oder Text) – er wird in deinem Browser gelesen.
+• Jeder Job bekommt eine Passung von 0 bis 100: passt sehr gut, gut, teilweise oder wenig
+• Die Tabelle wird nach Passung sortiert, „Beste Treffer für deinen Lebenslauf“ zeigt deine Top 5
+• Klapp einen Job auf und sieh seine Schlüsselwörter – welche in deinem Lebenslauf stehen und welche fehlen. Ideal, um die Bewerbung anzupassen
+• Muss-Anforderungen zählen mehr als Wunsch-Anforderungen („wünschenswert“, „von Vorteil“), und ein englischer Lebenslauf passt auch zu deutschen Anzeigen
+• Zeig nur Jobs ab 60 % Passung und behalte deine Bewerbungen im Blick: Status (interessant, beworben, Vorstellungsgespräch, Zusage, Absage) und Notizen für jeden Job
+• Der Excel-Export enthält Status, Notizen, Passung %, Schlüsselwörter, „In meinem Lebenslauf“ und „Fehlt im Lebenslauf“
+Diese Bewertung läuft lokal – dein Lebenslauf verlässt den Browser nicht.
+
+Optionale KI-Bewertung: Schalte sie in den Einstellungen ein und gib deinen eigenen Anthropic-API-Schlüssel ein, damit Claude die Jobs bewertet. Jeder Job bekommt eine KI-Bewertung, ein kurzes Fazit, passende und fehlende Fähigkeiten und seine Schlüsselwörter. Nur wenn du auf „Mit KI bewerten“ klickst, werden dein Lebenslauf und die gewählten Anzeigen mit deinem Schlüssel direkt an Anthropic gesendet; die Kosten laufen über dein Anthropic-Konto.
+
+Lieber dein eigener KI-Chat? „Mit meinem Lebenslauf abgleichen“ kopiert einen fertigen Prompt mit Lebenslauf und gewählten Jobs in die Zwischenablage.
+
+━━━━━━━━━━━━━━━━━━━━
+ANDERE JOBSEITEN
+━━━━━━━━━━━━━━━━━━━━
+Crancky Work funktioniert auch auf vielen anderen Jobbörsen und Karriereseiten von Unternehmen: Zeig auf die Jobliste, klick sie an, und Crancky Work merkt sich, wo die Jobs stehen. Der Zugriff auf eine solche Seite wird erst angefragt, wenn du Crancky Work dort nutzen willst – und nur für diese eine Seite.
+
+━━━━━━━━━━━━━━━━━━━━
+PRIVAT UND FAIR
+━━━━━━━━━━━━━━━━━━━━
+• Alles bleibt in deinem Browser: kein Konto, keine Server, kein Tracking, keine Analyse.
+• Deine gesammelten Jobs, Einstellungen und dein Lebenslauf werden lokal gespeichert und nie an den Entwickler gesendet. Nur die optionale KI-Bewertung – wenn du sie einschaltest und nutzt – sendet Lebenslauf und gewählte Anzeigen mit deinem eigenen Schlüssel an Anthropic.
+• Crancky Work löst keine CAPTCHAs und umgeht keine Anmeldungen. Fragt eine Seite, ob du ein Mensch bist, oder verlangt eine Anmeldung, stoppt Crancky Work, sagt dir Bescheid und wartet, bis du das selbst erledigt hast.
+• Crancky Work liest einen Job nach dem anderen, mit einer zufälligen Pause von mehreren Sekunden zwischen den Seiten – wie ein Mensch.
+• Oberfläche auf Deutsch und Englisch.
+
+━━━━━━━━━━━━━━━━━━━━
+GUT ZU WISSEN
+━━━━━━━━━━━━━━━━━━━━
+• LinkedIn und XING zeigen die meisten Jobs nur angemeldeten Nutzern. Crancky Work nutzt die Sitzung, die in deinem Browser schon geöffnet ist – es fragt nie nach deinem Passwort und speichert es nicht.
+• Jobbörsen ändern ihre Seiten von Zeit zu Zeit. Wenn etwas nicht richtig erkannt wird, melde es bitte, damit die Unterstützung der Seite aktualisiert werden kann.
+• Bitte beachte die Nutzungsbedingungen der Jobbörsen, die du nutzt. Crancky Work ist für deine eigene, persönliche Jobsuche in moderatem Tempo gedacht.
+
+Crancky Work ist ein unabhängiges Projekt und steht in keiner Verbindung zu StepStone, Indeed, LinkedIn oder XING und wird von diesen weder unterstützt noch gesponsert. Alle Namen gehören ihren jeweiligen Inhabern.
+
+Datenschutzerklärung: https://github.com/CranckyQ/crancky-work/blob/main/PRIVACY.md
+```
+
+### Graphics
+
+| Asset                         | File                                    | Size     |
+| ----------------------------- | --------------------------------------- | -------- |
+| Store icon                    | `public/icons/icon128.png`              | 128×128  |
+| Screenshot 1                  | `store/screenshots/1-analysis.png`      | 1280×800 |
+| Screenshot 2                  | `store/screenshots/2-live-progress.png` | 1280×800 |
+| Screenshot 3                  | `store/screenshots/3-cv-fit.png`        | 1280×800 |
+| Screenshot 4                  | `store/screenshots/4-tracking.png`      | 1280×800 |
+| Screenshot 5                  | `store/screenshots/5-settings.png`      | 1280×800 |
+| Small promo tile              | `store/promo-small-440x280.png`         | 440×280  |
+| Marquee promo tile (optional) | `store/promo-marquee-1400x560.png`      | 1400×560 |
+
+The screenshots use a demo job board with fictional companies.
+German, dark-mode versions for the "Deutsch" listing are in `store/screenshots-de/` (same order).
+
+## Privacy practices tab
+
+**Single purpose:**
+
+```
+Crancky Work collects the job listings a user chooses from job board search results into one table and exports them as an Excel file.
+```
+
+**Permission justifications:**
+
+| Permission                                              | Justification                                                                                                                                                                                              |
+| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sidePanel                                               | The whole user interface (page summary, progress, job table, settings) is shown in the side panel.                                                                                                         |
+| storage                                                 | Saves the user's settings (language, delay, filter words, window mode) locally.                                                                                                                            |
+| tabs                                                    | Reads the URL of the active tab to recognize a job search page, and opens/navigates a background tab in Crancky Work's own window to read the job ads the user asked to collect.                                 |
+| scripting                                               | Injects Crancky Work's content script into the job search page and the job ads to read the job details and to show the progress marks.                                                                           |
+| activeTab                                               | Lets the user analyze the current job page when they open Crancky Work from the toolbar.                                                                                                                         |
+| alarms                                                  | Keeps a long collection running in the background service worker and resumes it after the worker restarts.                                                                                                 |
+| notifications                                           | Shows one notification when a collection has finished ("Done! 312 jobs collected").                                                                                                                        |
+| Host permissions (StepStone, Indeed, LinkedIn, XING)    | These are the supported job boards. Crancky Work reads their search result pages and job ads – only when the user starts a collection.                                                                           |
+| Optional host permissions (https://\*/\*, http://\*/\*) | Requested at runtime for one single site only: another job board the user chooses to use Crancky Work on, or api.anthropic.com when the user turns on the optional AI evaluation. Never requested automatically. |
+
+**Are you using remote code?** No, I am not using remote code. (All JavaScript is bundled in the package.)
+
+**Data usage** – tick these three, because the optional AI evaluation sends data to Anthropic
+when the user turns it on and uses it:
+
+- **Personally identifiable information** – the CV text (sent to Anthropic only in AI mode)
+- **Authentication information** – the user's own Anthropic API key (stored locally, sent only
+  to Anthropic to authenticate the user's own requests)
+- **Website content** – the text of the job ads (read from job boards; sent to Anthropic only in
+  AI mode)
+
+Leave the others unticked. Then confirm all three statements:
+
+- I do not sell or transfer user data to third parties, outside of the approved use cases
+- I do not use or transfer user data for purposes that are unrelated to my item's single purpose
+- I do not use or transfer user data to determine creditworthiness or for lending purposes
+
+**Privacy policy URL:** `https://github.com/CranckyQ/crancky-work/blob/main/PRIVACY.md`
+
+## Distribution
+
+- Visibility: start with **Unlisted** (only people with the link can install) – switch to Public later.
+- Regions: all regions (or Germany/Austria/Switzerland only).
+- Pricing: free.
+
+## Test instructions for the reviewer (optional field)
+
+```
+1. Open https://de.indeed.com/jobs?q=praktikum (or a StepStone search) and click the Crancky Work toolbar icon – the side panel shows a summary of the page.
+2. Click "Only this page" – Crancky Work opens a minimized window, reads the job ads and fills the table. Progress is shown in the panel and on the page.
+3. Click "Export Excel" to download the table.
+No account or login is needed for Indeed and StepStone. LinkedIn and XING show most jobs only to logged-in users.
+```
